@@ -9,7 +9,7 @@ if(NOT "${CMAKE_CXX_STANDARD}")
     set(CMAKE_CXX_STANDARD ${CXX_SMASH_STANDARD})
 endif()
 # Set the relevant generic compiler flags (optimisation + warnings)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -W -Wall -Wextra -Wmissing-declarations -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wundef -Wcast-align -Wformat=2 -Wold-style-cast -Werror=switch -std=c++${CMAKE_CXX_STANDARD} -mfpmath=sse")
 message(STATUS "CXX_FLAGS = " ${CMAKE_CXX_FLAGS})
 
